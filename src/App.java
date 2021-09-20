@@ -34,8 +34,10 @@ public class App {
             Dividend2 = Income * dividendRates[1];
             Dividend3 = Income * dividendRates[2];
         }
-        System.out.println("Dividend1 : "+Dividend1);
-        System.out.println("Dividend2 : "+Dividend2);
-        System.out.println("Dividend3 : "+Dividend3);
+        int i = 0;
+        while(i < dividendRates.length) {
+            System.out.println("Dividend1 : "+Income * dividendRates[i]);
+            i= i+1;
+        }
     }
 }
